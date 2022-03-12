@@ -7,11 +7,11 @@ def search(x)
 
   arr.each do |element|
 
-    puts "O elemento #{x.to_i} está presente no indice #{arr.find_index(x)}" if x.to_i == element
+    puts "O elemento #{x} está presente no indice #{arr.find_index(x)}" if x == element
   end
   puts "O elemento #{x} não está presente em arr[]."
 end
 
 puts "Digite um número para realizar a busca: "
-x = gets
-search(x.to_i)
+x = gets.to_i
+search(x)
