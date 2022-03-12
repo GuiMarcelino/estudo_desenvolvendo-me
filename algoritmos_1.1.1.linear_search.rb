@@ -1,24 +1,17 @@
 # Problema: Dado um array arr[] de n elementos, escreva uma função para buscar um dado elemento x em arr[].
+require 'byebug'
 
-print "Digite um número para realizar a busca: "
-x = gets
 
 def search(x)
   arr = [10, 20, 80, 30, 60, 50, 110, 100, 130, 170]
 
   arr.each do |element|
 
-    puts (x == element) ? "O elemento #{x} está presente no indice " : "O elemento #{x} não está presente em arr"
-
+    puts "O elemento #{x.to_i} está presente no indice #{arr.find_index(x)}" if x.to_i == element
   end
-
+  puts "O elemento #{x} não está presente em arr[]."
 end
 
-search(x)
-#
-# arr.each do |element|
-#
-#   puts x if element == x
-#
-# end
-# 10
+puts "Digite um número para realizar a busca: "
+x = gets
+search(x.to_i)
