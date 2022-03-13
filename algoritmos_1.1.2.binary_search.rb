@@ -9,7 +9,7 @@ def search(array, x)
 
   array.find_index(x) # indice do valor
 
-  half = array.sort!.length / 2 # metade do indice
+  half = array.sort!.length / 2 # metade do indice e ordena o array
   middle = array.length.odd? ? array[half] : (array[half] + array[half - 1]) / 2 # valor que pode estar no indice do meio do array
 
   if middle == x   # está no meio do array ?
@@ -27,6 +27,6 @@ end
 
 array = [10, 20, 80, 30, 60, 50, 110, 100, 130, 170]
 
-puts "Digite um número para realizar a busca: "
+print "Digite um número para realizar a busca: "
 x = gets.to_i
 search(array, x)
