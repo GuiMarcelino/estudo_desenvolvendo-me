@@ -5,7 +5,6 @@ def bubble_sort(array)
 
   if seq[0..1] == array[0..1]
 
-
   end
 
 end
