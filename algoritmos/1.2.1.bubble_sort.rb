@@ -2,25 +2,21 @@
 require 'byebug'
 
 def bubble_sort(array)
-
-
-  array.length
-  count = 0
-
-  while array.length > count
-
-    array_sort = []
-    count +=1
-
-    if array[0] > array[1]
-
-      array_sort << array[1]
-      array_sort << array[0]
-
+  return array if array.size <= 1
+  swapped = true
+  while swapped
+    swapped = false
+    0.upto(array.size-2) do |i|
+      if array[i] > array[i+1]
+        array[i], array[i+1] = array[i+1], array[i]
+        swapped = true
+      end
     end
   end
+
+  puts array
 end
 
-array = [64, 34, 25, 12, 22, 11, 90]
 
+array = [64, 34, 25, 12, 22, 11, 90, 124, 45, 10, 2]
 bubble_sort(array)
