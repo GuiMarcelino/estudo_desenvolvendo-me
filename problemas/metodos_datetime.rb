@@ -37,3 +37,5 @@ DateTime.now.end_of_month
 
 DateTime.now.beginning_of_month
 # Tue, 01 Mar 2022 00:00:00 -0300  (first day of month)
+#
+#
