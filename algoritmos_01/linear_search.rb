@@ -1,7 +1,6 @@
 # Problema: Dado um array arr[] de n elementos, escreva uma função para buscar um dado elemento x em arr[].
 require 'byebug'
 
-
 def search(x)
   arr = [10, 20, 80, 30, 60, 50, 110, 100, 130, 170]
 
