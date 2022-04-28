@@ -17,5 +17,5 @@ def missing_number(array)
   total - sum_of_array # faz o cálculo que retorna o número que falta
 end
 
-array = [6,7,9,10]
+array = [1, 2, 4, 5, 6]
 missing_number(array)
